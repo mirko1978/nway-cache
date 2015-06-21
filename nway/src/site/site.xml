@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Maven"
+         xmlns="http://maven.apache.org/DECORATION/1.0.0"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+    <bannerLeft>
+        <name>Mirko Bernardoni :: N-Way Set Associative Cache</name>
+        <href>index.html</href>
+    </bannerLeft>
+
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.3.1</version>
+    </skin>
+    <custom>
+        <fluidoSkin>
+            <sideBarEnabled>true</sideBarEnabled>
+            <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+            <copyrightClass>pull-right</copyrightClass>
+        </fluidoSkin>
+    </custom>
+
+    <body>
+
+        <menu name="Documentation">
+			<item name="Getting started" href="getting_started.html"/>
+            <item name="Cache explained" href="cache.html"/>
+            <item name="Usage" href="usage.html"/>
+            <item name="Diagrams" href="diagrams.html"/>
+            <item name="Design" href="design.html"/>
+            <item name="NWay Example" href="example.html"/>
+            <item name="Word design document" href="NWay_design.docx"/>
+            <item name="PDF design document" href="NWay_design.pdf"/>            
+        </menu>
+
+        <menu ref="reports"/>
+
+    </body>
+</project>

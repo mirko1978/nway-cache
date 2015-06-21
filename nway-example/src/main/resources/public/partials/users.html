@@ -1,0 +1,40 @@
+<div class="row">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="btn btn-lg btn-success" href="#/edit-user/0"><i class="glyphicon glyphicon-plus"></i>&nbsp;Add
+                new User</a>
+            &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-lg btn-primary" ng-click="loadUsers()"><i class="glyphicon glyphicon-plus"></i>&nbsp;Load
+                50 Users
+            </button>
+        </div>
+    </nav>
+    <div class="col-md-12" ng-show="users.length > 0">
+        <table class="table table-striped table-bordered">
+            <thead>
+            <th>ID&nbsp;</th>
+            <th>First Name&nbsp;</th>
+            <th>Last Name&nbsp;</th>
+            <th>Phone&nbsp;</th>
+            <th>Email&nbsp;</th>
+            <th>Action&nbsp;</th>
+            </thead>
+            <tbody>
+            <tr ng-repeat="data in users">
+                <td>{{data.id}}</td>
+                <td>{{data.firstName}}</td>
+                <td>{{data.lastName}}</td>
+                <td>{{data.phone}}</td>
+                <td>{{data.email}}</td>
+                <td><a href="#/edit-user/{{data.id}}" class="btn">&nbsp;<i class="glyphicon glyphicon-edit"></i>&nbsp;
+                    Edit User</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-12" ng-show="users.length == 0">
+        <div class="col-md-12">
+            <h4>No users found</h4>
+        </div>
+    </div>
+</div>

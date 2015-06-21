@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-app lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        ul > li, a {
+            cursor: pointer;
+        }
+    </style>
+    <title>N Way set associative cache demo</title>
+</head>
+<body>
+<div class="navbar navbar-default" id="navbar">
+    <div class="container" id="navbar-container">
+        <div class="navbar-header">
+            <small>
+                <i class="glyphicon glyphicon-log-out"></i>
+                N Way set associative cache demo
+            </small>
+        </div>
+        <!-- /.navbar-header -->
+
+    </div>
+</div>
+
+
+<div>
+    <div class="container">
+        <p>Demo application for test the N Way set associative cache.<br/>
+            The demo uses a Spring Boot REST web services and Angular Js for the UI</p>
+
+        <p><strong>REST webservice specification:</strong></p>
+        <table class="table table-bordered table-condensed">
+            <thead>
+            <th>Method</th>
+            <th>URL</th>
+            <th>Input Body</th>
+            <th>Return Body</th>
+            <th>Description</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>GET</code></td>
+                <td>/users/{id}</td>
+                <td>Not required</td>
+                <td>User JSON object</td>
+                <td>Retrieve information about the user with {id}<br/>
+                    <code>HTTP 404</code> code returned if the {id} is not found
+                </td>
+            </tr>
+            <tr>
+                <td><code>GET</code></td>
+                <td>/users</td>
+                <td>Not required</td>
+                <td>Array of user JSON objects</td>
+                <td>Retrieve all the users</td>
+            </tr>
+            <tr>
+                <td><code>POST</code></td>
+                <td>/users</td>
+                <td>User JSON object</td>
+                <td>Nothing</td>
+                <td>Create a new user</td>
+            </tr>
+            <tr>
+                <td><code>POST</code></td>
+                <td>/users/load</td>
+                <td>Not required</td>
+                <td>Nothing</td>
+                <td>Load 50 users</td>
+            </tr>
+            <tr>
+                <td><code>PUT</code></td>
+                <td>/users/{id}</td>
+                <td>User JSON object</td>
+                <td>Nothing</td>
+                <td>Update an existing user with {id}<br/>
+                    <code>HTTP 404</code> code returned if the {id} is not found
+                </td>
+            </tr>
+            <tr>
+                <td><code>DELETE</code></td>
+                <td>/users/{id}</td>
+                <td>Not required</td>
+                <td>Nothing</td>
+                <td>Delete an existing user with {id}<br/>
+                    <code>HTTP 404</code> code returned if the {id} is not found
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+
+        <div ng-view="" id="ng-view"></div>
+    </div>
+</div>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="app/app.js"></script>
+</body>
+</html>

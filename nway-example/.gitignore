@@ -1,0 +1,23 @@
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+.externalToolBuilders/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Others
+workspaces/
+temp/
+src/main/resources/git.properties
