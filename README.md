@@ -6,8 +6,16 @@ N-Way cache is a java 8 library that uses maven.
 Documentation
 ==============
 
-The documentation is provided inside the maven site.
-Enter in the folder `site` and click on index.html
+The documentation is provided inside the maven site.  
+A copy is also available on the follow links:  
+       
+* [Usage](docs/usage.md)
+* [Design](docs/design.md)
+* [Getting started](docs/getting_started.md) 
+* [Cache explained](docs/cache.md)
+* [Diagrams](docs/diagrams.md)
+* [NWay Example](docs/NWay_design.md)
+* [PDF design document](docs/NWay_design.pdf)
 
 Quick Start
 ===========
