@@ -14,7 +14,7 @@ A copy is also available on the follow links:
 * [Getting started](docs/getting_started.md) 
 * [Cache explained](docs/cache.md)
 * [Diagrams](docs/diagrams.md)
-* [NWay Example](docs/NWay_design.md)
+* [NWay Example](docs/example.md)
 * [PDF design document](docs/NWay_design.pdf)
 
 Quick Start
